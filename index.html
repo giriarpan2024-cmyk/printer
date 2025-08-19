@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QuickPrint Shop</title>
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+            color: white;
+            padding: 2rem 0 1rem 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .header .lead {
+            font-size: 1.2rem;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .pricing {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pricing h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .cards-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .card {
+            background: #f4f8ff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            flex: 1 1 250px;
+            max-width: 280px;
+            min-width: 220px;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+        }
+        .card-body {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .fw-semibold {
+            font-weight: 600;
+        }
+        .mt-4 { margin-top: 2rem; }
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mb-5 { margin-bottom: 3rem; }
+        .text-center { text-align: center; }
+        .text-primary { color: #007bff; }
+        .text-success { color: #28a745; }
+        .text-muted { color: #6c757d; }
+        .fst-italic { font-style: italic; }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.8rem 2.2rem;
+            border: none;
+            border-radius: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .my-5 { margin-top: 3rem; margin-bottom: 3rem; }
+        .order-info p { margin-bottom: 0.5rem; }
+        .footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .pricing { padding: 1.2rem 0.5rem; }
+            .cards-row { gap: 1rem; }
+        }
+        @media (max-width: 700px) {
+            .cards-row { flex-direction: column; align-items: center; }
+            .card { max-width: 95%; }
+        }
+        @media (max-width: 500px) {
+            .header h1 { font-size: 1.5rem; }
+            .pricing h2 { font-size: 1.2rem; }
+            .btn { font-size: 1rem; padding: 0.6rem 1.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header mb-4">
+        <div>
+            <h1 class="display-5 fw-bold mb-2">QuickPrint Shop</h1>
+            <p class="lead mb-0">Contact: <a href="tel:8902087817">8902087817</a></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="pricing">
+            <h2 class="mb-4">Our Services & Pricing</h2>
+            <div class="cards-row">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">🖨️ Black & White Printing</h4>
+                        <p class="mb-1">Single Side: <span class="fw-semibold">₹2/page</span></p>
+                        <p>Both Sides: <span class="fw-semibold">₹3/page</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">🌈 Color Printing</h4>
+                        <p class="mb-1">Single Side: <span class="fw-semibold">₹6/page</span></p>
+                        <p>Both Sides: <span class="fw-semibold">₹10/page</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">🖼️ Passport Photos</h4>
+                        <p class="mb-1">4 Pics: <span class="fw-semibold">₹20</span></p>
+                        <p class="mb-1">6 Pics: <span class="fw-semibold">₹25</span></p>
+                        <p>10 Pics: <span class="fw-semibold">₹40</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-row mt-4" style="justify-content:center;">
+                <div class="card" style="max-width:350px;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-2">📷 Scanning</h4>
+                        <p class="mb-0">₹1 per page</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 text-center order-info">
+                <p class="mb-1"><strong>Payment via UPI only:</strong> <span class="text-primary">9732752965@jio</span></p>
+                <p class="mb-1">Please upload payment screenshot in the form.</p>
+                <p class="fst-italic text-success">Orders taken within 24 hours.</p>
+            </div>
+        </section>
+
+        <div class="text-center my-5">
+            <a href="https://forms.gle/k634W54bpdEkHtJz8" target="_blank" class="btn">
+                📤 Fill Out the Order Form
+            </a>
+            <p class="mt-2 fst-italic text-muted">(Form will open in a new secure tab for file upload)</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2025 QuickPrint Shop | Contact: 8902087817
+    </footer>
+</body>
+
+</html>
